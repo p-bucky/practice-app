@@ -1,8 +1,11 @@
 import { Button, Form, Input, Row } from "antd";
 import React from "react";
+import { loginSchema } from "../../../validator/login-validator";
+
 export const LoginForm = () => {
-  const onFinish = (values) => {
-    console.log("Success:", values);
+  const onFinish = async (values) => {
+    const isValid = await loginSchema.isValid(values);
+    console.log("Success:", isValid);
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);

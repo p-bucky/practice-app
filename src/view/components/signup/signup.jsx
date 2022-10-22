@@ -1,8 +1,8 @@
 import React from "react";
 import { Form } from "antd";
-import { PhoneNumberInput } from "../../../shared/c-input";
-import { phoneNumberValidator } from "../../../../validator/phone-number";
-import { CButton } from "../../../shared/c-button";
+import { PhoneNumberInput } from "../../shared/c-input";
+import { phoneNumberValidator } from "../../../validator/phone-number";
+import { CButton } from "../../shared/c-button";
 
 const yupSync = {
   async validator({ field }, value) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import OtpInput from "react-otp-input";
 import { Typography } from "antd";
 import { CButton } from "../../../../shared/c-button";

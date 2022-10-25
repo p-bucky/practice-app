@@ -2,6 +2,7 @@ import React from "react";
 import { Pin } from "./components/pin";
 import { Otp } from "./components/otp";
 import { SignupForm } from "./components/form";
+import { UserInformation } from "./components/user-information";
 
 export const Signup = () => {
   const SignupStep = [
@@ -32,7 +33,10 @@ export const Signup = () => {
         />
       ),
     },
+    {
+      component: <UserInformation />,
+    },
   ];
 
-  return <div>{SignupStep[2].component}</div>;
+  return <div>{SignupStep[3].component}</div>;
 };
